@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Y</title>
+        <style type="text/css">
+               *{
+                padding: 0;
+                margin: 0;
+            }
+            div{
+                height: 100%;
+                width: 100vh;
+                background-color: darkorchid;
+            }
+            img{
+                height: 100%;
+                width: 100vh;
+                object-position: center;
+                object-fit: cover;
+            }
+            a>p{
+                position: fixed;
+            }
+            a[title="cmyk"] p{
+                top: 10px;
+                left: 10px;
+            }
+            a[title="k"] p{
+                bottom: 10px;
+                right: 10px;
+                background-color: darkgrey;
+            }
+            a[title="m"] p{
+                left: 10px;
+                bottom: 10px;
+                background-color: magenta;
+            }
+        </style>
+    </head>
+    <body>
+        <!--OTRA FORMA DE AÑADIR LA IMAGEN EN UN DIVISOR Y EDITAR EN EL HEAD-->
+        <div>
+            <img src="../img/y.jpg">
+        </div>
+        <a title="cmyk" href="../index.html"><p>cmyk</p></a>
+        <a title="m" href="m.html" alt="m"><p>m</p></a>
+        <a title="k" href="k.html" alt="k"><p>k</p></a>
+    </body>
+</html>
